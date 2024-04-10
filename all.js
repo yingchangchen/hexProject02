@@ -2,6 +2,7 @@ $(document).ready(function () {
   $(".dropdown").click(function (e) {
     e.preventDefault();
     $(".dropdown-open").slideToggle();
+    $(this).toggleClass("active");
   });
 
   //swiper
@@ -26,6 +27,8 @@ $(document).ready(function () {
   lightbox.option({
     resizeDuration: 200,
     wrapAround: true,
+    maxWidth: 1000,
+    maxHeight: 1000,
   });
 
   //top效果
