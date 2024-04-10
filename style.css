@@ -195,7 +195,8 @@ table {
   /* align-items: center; */
 }
 
-.header ul a {
+.header ul a,
+.dropdown-open a {
   text-decoration: none;
   display: block;
   color: #00251a;
@@ -212,17 +213,18 @@ table {
   border-bottom: 5px solid #00cc99;
 }
 
-/* .dropdown-open {
+.header > ul > li {
   position: relative;
 }
 
-.dropdown-open li {
+.dropdown-open {
   position: absolute;
   z-index: 3;
-} */
+}
 
 .dropdown-open {
   display: none;
+  background-color: #ffffff;
 }
 
 .banner {
@@ -447,4 +449,33 @@ table {
 .contact a {
   text-decoration: none;
   color: #00cc99;
+}
+
+/*swiper*/
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 390px;
+  object-fit: cover;
+}
+
+/*top效果*/
+.top {
+  position: fixed;
+  right: 0;
+  bottom: 0;
 }

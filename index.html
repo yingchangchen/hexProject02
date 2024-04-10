@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>六角作業</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="wrap">
@@ -50,29 +58,51 @@
         </ul>
       </div>
       <div class="banner">
-        <img
-          src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png"
-          alt="banner"
-        />
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png"
+                alt="banner"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png"
+                alt="banner"
+              />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
         <div class="shadow"></div>
         <h1>六角學院<br />讓你奠定良好的前端基礎</h1>
       </div>
       <ul class="content">
         <li class="item">
-          <img
-            src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/html.png"
-            alt="html課程"
-          />
+          <a
+            href="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/html.png"
+            data-lightbox="hexschool"
+            ><img
+              src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/html.png"
+              alt="html課程"
+          /></a>
           <h2>Html 5基礎教學</h2>
           <p>
             主流前端網站設計的基礎就在六角學院，在這裡不在是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。
           </p>
         </li>
         <li class="item">
-          <img
-            src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/rwd.png"
-            alt="響應式課程"
-          />
+          <a
+            href="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/rwd.png"
+            data-lightbox="hexschool"
+            ><img
+              src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/rwd.png"
+              alt="響應式課程"
+          /></a>
           <h2>響應式網站設計</h2>
           <p>
             響應式網站設計 (Responsive web
@@ -80,10 +110,13 @@
           </p>
         </li>
         <li class="item">
-          <img
-            src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/jQuery.png"
-            alt="jQuery課程"
-          />
+          <a
+            href="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/jQuery.png"
+            data-lightbox="hexschool"
+            ><img
+              src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/jQuery.png"
+              alt="jQuery課程"
+          /></a>
           <h2>jQuery 實戰教學</h2>
           <p>本課程有以下特色：</p>
           <ul class="list">
@@ -198,12 +231,18 @@
         </div>
       </div>
     </div>
+    <div class="top">
+      <a href=""><img src="./image/top.png" alt="" /></a>
+    </div>
 
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
     <script src="./all.js"></script>
   </body>
 </html>
