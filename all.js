@@ -33,7 +33,7 @@ $(document).ready(function () {
 
   //top效果
   function showBtnCondition() {
-    if ($(this).scrollTop() > 1200) {
+    if ($(this).scrollTop() > 500) {
       $(".top").fadeIn();
     } else {
       $(".top").fadeOut();
