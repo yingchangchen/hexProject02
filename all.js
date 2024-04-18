@@ -32,6 +32,14 @@ $(document).ready(function () {
   });
 
   //top效果
+  function showBtnCondition() {
+    if ($(this).scrollTop() > 1200) {
+      $(".top").fadeIn();
+    } else {
+      $(".top").fadeOut();
+    }
+  }
+  $(window).scroll(showBtnCondition);
   $(".top a").click(function (e) {
     e.preventDefault();
     $("html,body").animate(
